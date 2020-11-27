@@ -5,17 +5,15 @@ gsap.from("nav", {
 });
 gsap.from(".hero h1", {
   opacity: 0,
-  duration: 2,
+  y: 10,
+  duration: 0.5,
   delay: 0.5,
-  ease: "Power2.easeInOut",
 });
 
 gsap.from(".the-problem h3", {
   scrollTrigger: {
     trigger: ".the-problem",
-    start: "top center", // when the top of the trigger hits the top of the viewport
-    end: "center bottom",
-    markers: true,
+    start: "top 70%", // when the top of the trigger hits the top of the viewport
   },
   duration: 1,
   autoAlpha: 0,
@@ -24,9 +22,7 @@ gsap.from(".the-problem h3", {
 gsap.from(".the-problem p", {
   scrollTrigger: {
     trigger: ".the-problem",
-    start: "10% center", // when the top of the trigger hits the top of the viewport
-    end: "center bottom",
-    markers: true,
+    start: "top 60%", // when the top of the trigger hits the top of the viewport
   },
   duration: 1,
   autoAlpha: 0,
@@ -38,7 +34,6 @@ gsap.from(".laptop", {
     start: "top center", // when the top of the trigger hits the top of the viewport
     end: "bottom bottom",
     scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
-    markers: true,
   },
   x: 300,
   autoAlpha: 0,
@@ -50,7 +45,6 @@ gsap.from(".hand", {
     start: "center center", // when the top of the trigger hits the top of the viewport
     end: "120% bottom",
     scrub: 2, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
-    markers: true,
   },
   y: 300,
   autoAlpha: 0,
@@ -59,9 +53,7 @@ gsap.from(".hand", {
 gsap.from(".the-solution h3", {
   scrollTrigger: {
     trigger: ".the-solution",
-    start: "top center", // when the top of the trigger hits the top of the viewport
-    end: "center bottom",
-    markers: true,
+    start: "top 70%", // when the top of the trigger hits the top of the viewport
   },
   duration: 1,
   autoAlpha: 0,
@@ -70,9 +62,7 @@ gsap.from(".the-solution h3", {
 gsap.from(".the-solution p", {
   scrollTrigger: {
     trigger: ".the-solution",
-    start: "10% center", // when the top of the trigger hits the top of the viewport
-    end: "center bottom",
-    markers: true,
+    start: "top 60%", // when the top of the trigger hits the top of the viewport
   },
   duration: 1,
   autoAlpha: 0,
@@ -83,7 +73,6 @@ gsap.from(".laptop-1", {
     trigger: ".laptop-1",
     start: "top bottom", // when the top of the trigger hits the top of the viewport
     end: "top center",
-    markers: true,
   },
   x: 300,
   autoAlpha: 0,
@@ -94,7 +83,6 @@ gsap.from(".laptop-2", {
     trigger: ".laptop-2",
     start: "top bottom", // when the top of the trigger hits the top of the viewport
     end: "top center",
-    markers: true,
   },
   x: -300,
   autoAlpha: 0,
@@ -105,7 +93,6 @@ gsap.from(".laptop-3", {
     trigger: ".laptop-3",
     start: "top bottom", // when the top of the trigger hits the top of the viewport
     end: "top center",
-    markers: true,
   },
   x: 300,
   autoAlpha: 0,
@@ -116,8 +103,6 @@ gsap.to(".sticker-1, .sticker-2, .sticker-3", {
     trigger: ".the-solution",
     start: "top center", // when the top of the trigger hits the top of the viewport
     end: "bottom top",
-    markers: true,
-    scrub: true,
   },
   y: -50,
 });
@@ -127,41 +112,26 @@ gsap.from("#button-1", {
     trigger: "#button-1",
     start: "top bottom", // when the top of the trigger hits the top of the viewport
     end: "top center",
-    markers: true,
   },
   y: 50,
   autoAlpha: 0,
 });
 
-gsap.from("#our-partners-laptop", {
+gsap.from(".our-partners h3", {
   scrollTrigger: {
     trigger: ".our-partners",
-    start: "top center", // when the top of the trigger hits the top of the viewport
-    end: "center bottom",
+    start: "top 90%", // when the top of the trigger hits the top of the viewport
   },
-  x: 400,
-  delay: 2,
   duration: 1,
   autoAlpha: 0,
 });
 
-gsap.from("#our-partners-hand", {
+gsap.from(".our-partners h5", {
   scrollTrigger: {
     trigger: ".our-partners",
-    start: "top center", // when the top of the trigger hits the top of the viewport
-    end: "center bottom",
+    start: "top 80%", // when the top of the trigger hits the top of the viewport
   },
-  x: 400,
-  duration: 1,
-  autoAlpha: 0,
-});
-
-gsap.from(".our-partners h3, h5", {
-  scrollTrigger: {
-    trigger: ".our-partners",
-    start: "top center", // when the top of the trigger hits the top of the viewport
-    end: "center bottom",
-  },
+  x: -50,
   duration: 1,
   autoAlpha: 0,
 });
@@ -169,9 +139,7 @@ gsap.from(".our-partners h3, h5", {
 gsap.from(".our-partners p", {
   scrollTrigger: {
     trigger: ".our-partners",
-    start: "top center", // when the top of the trigger hits the top of the viewport
-    end: "center bottom",
-    markers: true,
+    start: "top 70%", // when the top of the trigger hits the top of the viewport
   },
   duration: 1,
   autoAlpha: 0,
@@ -182,10 +150,63 @@ gsap.from(".our-partners .col-md-4", {
     trigger: ".our-partners",
     start: "top center", // when the top of the trigger hits the top of the viewport
     end: "center bottom",
-    markers: true,
   },
   y: 100,
   duration: 1,
   autoAlpha: 0,
   stagger: 0.25,
+});
+
+gsap.from(".our-partners-laptop", {
+  scrollTrigger: {
+    trigger: ".our-partners",
+    start: "top center", // when the top of the trigger hits the top of the viewport
+    end: "center bottom",
+  },
+  x: 100,
+  duration: 1,
+  opacity: 0,
+});
+
+gsap.from(".our-partners-hand", {
+  scrollTrigger: {
+    trigger: ".our-partners",
+    start: "top center", // when the top of the trigger hits the top of the viewport
+    end: "center center",
+  },
+  x: 100,
+  delay: 0.25,
+  duration: 1,
+  opacity: 0,
+});
+
+gsap.from(".support-us h3", {
+  scrollTrigger: {
+    trigger: ".support-us",
+    start: "center bottom", // when the top of the trigger hits the top of the viewport
+  },
+  delay: 0.25,
+  duration: 1,
+  autoAlpha: 0,
+});
+
+gsap.from(".support-us h5", {
+  scrollTrigger: {
+    trigger: ".support-us",
+    start: "center bottom", // when the top of the trigger hits the top of the viewport
+  },
+  x: -50,
+  duration: 1,
+  autoAlpha: 0,
+});
+
+gsap.from("#button-2", {
+  scrollTrigger: {
+    trigger: ".support-us",
+    start: "center bottom", // when the top of the trigger hits the top of the viewport
+  },
+  y: 50,
+  delay: 0.5,
+  duration: 1,
+  autoAlpha: 0,
 });

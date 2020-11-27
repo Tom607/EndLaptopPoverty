@@ -9,7 +9,7 @@
     position: absolute;
     z-index: 0;
   }
-  .laptop {
+  .our-partners-laptop {
     max-width: 300px;
     right: 1%;
     top: 20px;
@@ -19,7 +19,7 @@
       top: 50px;
     }
   }
-  .hand {
+  .our-partners-hand {
     opacity: 0;
     @media screen and (min-width: variables.$min-width-lg) {
       opacity: 1;

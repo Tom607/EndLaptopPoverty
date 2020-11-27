@@ -2,8 +2,8 @@
 
 a {
   color: variables.$blue;
+  text-decoration: underline;
   &:hover {
-    text-decoration: none;
     color: variables.$blue;
     background-color: variables.$orange;
     opacity: 1;

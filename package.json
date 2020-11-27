@@ -15,10 +15,6 @@
     "parcel-bundler": "^1.12.4"
   },
   "dependencies": {
-    "bootstrap-icons": "^1.1.0",
-    "normalize-scss": "^7.0.1",
-    "normalize.css": "^8.0.1",
-    "sass": "^1.29.0",
-    "swup": "^2.0.11"
+    "sass": "^1.29.0"
   }
 }
