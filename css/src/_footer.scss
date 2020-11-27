@@ -1,0 +1,13 @@
+@use 'variables';
+
+footer {
+  background-color: variables.$dark-blue;
+  bottom: 0;
+  p {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: variables.$lilac;
+  }
+}

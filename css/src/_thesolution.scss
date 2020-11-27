@@ -1,0 +1,121 @@
+@use 'src/variables';
+
+.the-solution {
+  min-height: 900px;
+  padding-top: 80px;
+  @media screen and (min-width: variables.$min-width-lg) {
+    min-height: 90vh;
+    padding-top: 200px;
+  }
+  h1 {
+    font-size: 3rem;
+    @media screen and (min-width: variables.$min-width-lg) {
+      font-size: 130px;
+    }
+  }
+  .background-image {
+    position: absolute;
+    z-index: 0;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .laptop-1 {
+    max-width: 600px;
+    top: 400px;
+    left: 0;
+    @media screen and (min-width: variables.$min-width-lg) {
+      max-width: 800px;
+      top: 400px;
+      right: 2%;
+      left: auto;
+    }
+  }
+  .sticker-1 {
+    top: 500px;
+    max-width: 150px;
+    @media screen and (min-width: variables.$min-width-lg) {
+      max-width: 230px;
+      top: 600px;
+      left: 20%;
+      right: auto;
+    }
+  }
+  .arrow-1 {
+    top: 630px;
+    max-width: 200px;
+    right: 50px;
+    transform: rotate(60deg);
+    @media screen and (min-width: variables.$min-width-lg) {
+      max-width: 400px;
+      top: 850px;
+      right: 25%;
+      left: auto;
+    }
+  }
+  .laptop-2 {
+    max-width: 600px;
+    top: 750px;
+    right: 20px;
+    @media screen and (min-width: variables.$min-width-lg) {
+      max-width: 700px;
+      top: 850px;
+      left: 1%;
+      right: auto;
+    }
+  }
+  .sticker-2 {
+    top: 900px;
+    max-width: 150px;
+    right: 20px;
+    @media screen and (min-width: variables.$min-width-lg) {
+      max-width: 300px;
+      top: 1100px;
+      right: 10%;
+      left: auto;
+    }
+  }
+  .arrow-2 {
+    max-height: 200px;
+    top: 950px;
+    left: -150px;
+    right: auto;
+    transform: scaleX(-1) rotate(60deg);
+    @media screen and (min-width: variables.$min-width-lg) {
+      min-height: 300px;
+      top: 1250px;
+      left: -1000px;
+      right: auto;
+      transform: scaleX(-1) rotate(70deg);
+    }
+  }
+  .laptop-3 {
+    max-width: 600px;
+    top: 1150px;
+    @media screen and (min-width: variables.$min-width-lg) {
+      max-width: 700px;
+      top: 1600px;
+      right: 2%;
+      left: auto;
+    }
+  }
+  .sticker-3 {
+    top: 1090px;
+    right: 30px;
+    max-width: 150px;
+    @media screen and (min-width: variables.$min-width-lg) {
+      max-width: 300px;
+      top: 1600px;
+      left: 10%;
+      right: auto;
+    }
+  }
+  .steps {
+    .row {
+      padding: 160px 0;
+    }
+  }
+  .button {
+    margin-top: -20px;
+    margin-bottom: 150px;
+  }
+}

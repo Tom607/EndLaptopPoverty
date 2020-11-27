@@ -1,0 +1,16 @@
+@use 'variables';
+@use 'typography';
+
+body {
+  background-color: variables.$blue;
+  color: variables.$lilac;
+  font-family: variables.$font-stack;
+}
+
+section {
+  position: relative;
+}
+
+.orange {
+  color: variables.$orange;
+}

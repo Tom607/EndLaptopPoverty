@@ -1,0 +1,17 @@
+@use 'src/variables';
+
+.support-us {
+  background-color: variables.$dark-blue;
+  min-height: 500px;
+  padding-top: 80px;
+  .button {
+    @media (min-width: variables.$min-width-sm) {
+      margin: 60px auto;
+    }
+  }
+
+  .background-image {
+    position: absolute;
+    z-index: 0;
+  }
+}

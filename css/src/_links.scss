@@ -1,0 +1,11 @@
+@use 'variables';
+
+a {
+  color: variables.$blue;
+  &:hover {
+    text-decoration: none;
+    color: variables.$blue;
+    background-color: variables.$orange;
+    opacity: 1;
+  }
+}

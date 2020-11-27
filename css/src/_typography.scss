@@ -1,0 +1,45 @@
+@use 'variables';
+
+@font-face {
+  font-family: "MAD Sans Fill";
+  src: url("/fonts/MADSansFill-Bold.woff2") format("woff2"),
+    url("/fonts/MADSansFill-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "MAD Sans Fill";
+  src: url("/fonts/MADSansFill-Black.woff2") format("woff2"),
+    url("/fonts/MADSansFill-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  @media screen and (min-width: variables.$min-width-lg) {
+    font-size: 20px;
+  }
+}
+
+h1,
+h2,
+h3 {
+  font-family: variables.$font-stack;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+h3 {
+  padding: 0 0 20px;
+}
+
+h5 {
+  padding: 0 0 15px 30px;
+  color: variables.$orange;
+}
+
+.text-indent {
+  text-indent: 30px;
+}
