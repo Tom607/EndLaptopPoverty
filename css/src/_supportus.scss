@@ -2,11 +2,11 @@
 
 .support-us {
   background-color: variables.$dark-blue;
-  min-height: 500px;
   padding-top: 80px;
   .button {
-    @media (min-width: variables.$min-width-sm) {
-      margin: 60px auto;
+    margin-top: 50px;
+    @media (min-width: variables.$min-width-lg) {
+      padding: 60px 0 0;
     }
   }
 

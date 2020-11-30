@@ -103,6 +103,7 @@ gsap.to(".sticker-1, .sticker-2, .sticker-3", {
     trigger: ".the-solution",
     start: "top center", // when the top of the trigger hits the top of the viewport
     end: "bottom top",
+    scrub: true,
   },
   y: -50,
 });
@@ -111,13 +112,35 @@ gsap.from("#button-1", {
   scrollTrigger: {
     trigger: "#button-1",
     start: "top bottom", // when the top of the trigger hits the top of the viewport
-    end: "top center",
   },
   y: 50,
   autoAlpha: 0,
 });
 
-gsap.from(".our-partners h3", {
+gsap.from(".our-partners-laptop", {
+  scrollTrigger: {
+    trigger: ".our-partners",
+    start: "top center",
+    end: "top 20%",
+    scrub: 1, // when the top of the trigger hits the top of the viewport
+  },
+  x: 30,
+  duration: 1,
+  opacity: 0,
+});
+
+gsap.from(".our-partners-hand", {
+  scrollTrigger: {
+    trigger: ".our-partners",
+    start: "top center", // when the top of the trigger hits the top of the viewport
+  },
+  x: 30,
+  delay: 0.25,
+  duration: 1,
+  opacity: 0,
+});
+
+gsap.from(".our-partners-title", {
   scrollTrigger: {
     trigger: ".our-partners",
     start: "top 90%", // when the top of the trigger hits the top of the viewport
@@ -126,7 +149,7 @@ gsap.from(".our-partners h3", {
   autoAlpha: 0,
 });
 
-gsap.from(".our-partners h5", {
+gsap.from(".our-partners-header", {
   scrollTrigger: {
     trigger: ".our-partners",
     start: "top 80%", // when the top of the trigger hits the top of the viewport
@@ -136,7 +159,7 @@ gsap.from(".our-partners h5", {
   autoAlpha: 0,
 });
 
-gsap.from(".our-partners p", {
+gsap.from(".our-partners-body", {
   scrollTrigger: {
     trigger: ".our-partners",
     start: "top 70%", // when the top of the trigger hits the top of the viewport
@@ -145,39 +168,15 @@ gsap.from(".our-partners p", {
   autoAlpha: 0,
 });
 
-gsap.from(".our-partners .col-md-4", {
+gsap.from(".partner", {
   scrollTrigger: {
     trigger: ".our-partners",
     start: "top center", // when the top of the trigger hits the top of the viewport
-    end: "center bottom",
   },
   y: 100,
   duration: 1,
   autoAlpha: 0,
   stagger: 0.25,
-});
-
-gsap.from(".our-partners-laptop", {
-  scrollTrigger: {
-    trigger: ".our-partners",
-    start: "top center", // when the top of the trigger hits the top of the viewport
-    end: "center bottom",
-  },
-  x: 100,
-  duration: 1,
-  opacity: 0,
-});
-
-gsap.from(".our-partners-hand", {
-  scrollTrigger: {
-    trigger: ".our-partners",
-    start: "top center", // when the top of the trigger hits the top of the viewport
-    end: "center center",
-  },
-  x: 100,
-  delay: 0.25,
-  duration: 1,
-  opacity: 0,
 });
 
 gsap.from(".support-us h3", {

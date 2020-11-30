@@ -3,15 +3,14 @@
 .our-partners {
   background-color: variables.$lilac;
   color: variables.$blue;
-  min-height: 800px;
   padding: 80px 0;
   .background-image {
     position: absolute;
     z-index: 0;
   }
   .our-partners-laptop {
-    max-width: 300px;
-    right: 1%;
+    width: 300px;
+    right: 15px;
     top: 20px;
     @media screen and (min-width: variables.$min-width-lg) {
       max-width: 400px;
@@ -20,6 +19,9 @@
     }
   }
   .our-partners-hand {
+    top: -100px;
+    max-width: 200px;
+    right: 0;
     opacity: 0;
     @media screen and (min-width: variables.$min-width-lg) {
       opacity: 1;

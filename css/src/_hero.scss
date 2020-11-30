@@ -1,13 +1,14 @@
 @use 'src/variables';
 
 .hero {
-  min-height: 100vh;
+  min-height: calc(100vh - 106px);
   z-index: 1;
   h1 {
-    margin-top: 90px;
-    @media (min-width: variables.$min-width-sm) {
+    position: relative;
+    top: -40px;
+    @media (min-width: variables.$min-width-lg) {
       font-size: 100px;
-      margin-top: -100px;
+      top: -100px;
     }
   }
 }
