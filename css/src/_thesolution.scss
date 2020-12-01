@@ -6,6 +6,9 @@
   @media screen and (min-width: variables.$min-width-lg) {
     min-height: 90vh;
     padding-top: 200px;
+    @media (max-height: 800px) {
+      padding-top: 140px;
+    }
   }
   h1 {
     font-size: 3rem;

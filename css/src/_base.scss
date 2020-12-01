@@ -7,6 +7,15 @@ body {
   font-family: variables.$font-stack;
 }
 
+*::-moz-selection {
+  background-color: variables.$orange;
+  opacity: 1;
+}
+*::selection {
+  background-color: variables.$orange;
+  opacity: 1;
+}
+
 section {
   position: relative;
 }

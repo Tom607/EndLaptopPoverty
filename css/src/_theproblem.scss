@@ -7,6 +7,10 @@
   @media screen and (min-width: variables.$min-width-lg) {
     min-height: 90vh;
     padding-top: 300px;
+    @media (max-height: 800px) {
+      padding-top: 150px;
+      min-height: 120vh;
+    }
   }
   .background-image {
     position: absolute;
@@ -31,6 +35,9 @@
     @media screen and (min-width: variables.$min-width-lg) {
       right: 30%;
       width: 190px;
+      @media (max-height: 800px) {
+        right: 20%;
+      }
     }
   }
 }
