@@ -4,7 +4,7 @@ gsap.from("nav", {
   ease: "Power4.easeInOut",
 });
 gsap.from(".hero h1", {
-  opacity: 0,
+  autoAlpha: 0,
   y: 10,
   duration: 0.5,
   delay: 0.5,

@@ -4,6 +4,7 @@
   min-height: calc(100vh - 106px);
   z-index: 1;
   h1 {
+    visibility: hidden;
     position: relative;
     top: -40px;
     @media (min-width: variables.$min-width-lg) {

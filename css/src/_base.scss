@@ -1,6 +1,10 @@
 @use 'variables';
 @use 'typography';
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   background-color: variables.$blue;
   color: variables.$lilac;
