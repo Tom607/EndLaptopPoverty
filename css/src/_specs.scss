@@ -1,0 +1,13 @@
+@use 'src/variables';
+
+.specs {
+  min-height: 300px;
+  padding: 80px 0;
+  @media screen and (min-width: variables.$min-width-lg) {
+    min-height: 50vh;
+    padding: 200px 0;
+    @media (max-height: 800px) {
+      padding: 140px 0;
+    }
+  }
+}
