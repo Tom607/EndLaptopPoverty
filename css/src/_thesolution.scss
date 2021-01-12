@@ -56,8 +56,8 @@
     }
   }
   .laptop-2 {
-    max-width: 600px;
-    top: 750px;
+    max-width: 500px;
+    top: 800px;
     right: 20px;
     @media screen and (min-width: variables.$min-width-lg) {
       max-width: 700px;
@@ -80,9 +80,12 @@
   .arrow-2 {
     max-height: 200px;
     top: 950px;
-    left: -150px;
+    left: -270px;
     right: auto;
     transform: scaleX(-1) rotate(60deg);
+    @media screen and (min-width: variables.$min-width-md) {
+      left: -600px;
+    }
     @media screen and (min-width: variables.$min-width-lg) {
       min-height: 300px;
       top: 1250px;
@@ -93,7 +96,8 @@
   }
   .laptop-3 {
     max-width: 600px;
-    top: 1150px;
+    top: 1250px;
+    left: 20px;
     @media screen and (min-width: variables.$min-width-lg) {
       max-width: 700px;
       top: 1600px;
@@ -120,5 +124,9 @@
   .button {
     margin-top: -20px;
     margin-bottom: 150px;
+  }
+  .spacer {
+    height: 300px;
+    display: block;
   }
 }
