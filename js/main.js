@@ -108,15 +108,6 @@ gsap.to(".sticker-1, .sticker-2, .sticker-3", {
   y: -50,
 });
 
-gsap.from("#button-1", {
-  scrollTrigger: {
-    trigger: "#button-1",
-    start: "top bottom", // when the top of the trigger hits the top of the viewport
-  },
-  y: 50,
-  autoAlpha: 0,
-});
-
 gsap.from(".our-partners-laptop", {
   scrollTrigger: {
     trigger: ".our-partners",

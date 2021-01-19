@@ -6,8 +6,7 @@
   height: 100px;
   background-image: url("/img/IT_Poverty__ELP_Button.svg");
   position: relative;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   margin-bottom: 50px;
   @media screen and (min-width: variables.$min-width-lg) {
     width: 500px;
